@@ -1,0 +1,47 @@
+﻿html,body{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	font-family:Arial;
+}
+
+.box
+{
+	margin: 2% 0 0 5%;
+	
+	width:9%;
+}
+.tooltip-box
+{
+	text-align:center;
+	display:block;
+	cursor:pointer;
+	padding:2em;
+	color:#fff;
+	font-weight:bold;
+	background:#30d340;
+}
+.tooltip-item
+{
+	background:#000;
+	color:#fff;
+	padding:2em;
+	top:8.5em;
+	display:none;
+	position:absolute;
+}
+.box:hover .tooltip-item
+{
+	display:block;
+}
+.box .tooltip-item::after
+{
+	position: absolute;
+    border-width: 1.3em;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+	top:-50%;
+	left:5%;
+	content:"";
+}
